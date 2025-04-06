@@ -3,8 +3,8 @@ import 'package:provider/provider.dart';
 import 'theme_provider.dart';
 import 'segunda_tela.dart';
 
-class ScreenOne extends StatelessWidget {
-  const ScreenOne({super.key});
+class PrimeiraTela extends StatelessWidget {
+  const PrimeiraTela({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class ScreenOne extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (_) => const ScreenTwo()),
+                  MaterialPageRoute(builder: (_) => const SegundaTela()),
                 );
               },
               child: const Text("Ir para Tela 2"),
